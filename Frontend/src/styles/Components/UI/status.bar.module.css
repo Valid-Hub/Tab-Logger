@@ -1,0 +1,32 @@
+.container {
+    margin: 1rem;
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.number {
+    font-size: 1.875rem;
+    font-weight: 900;
+}
+
+.label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

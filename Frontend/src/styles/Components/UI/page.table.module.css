@@ -1,0 +1,161 @@
+.container {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.content {
+    max-height: 600px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thead {
+    position: sticky;
+    top: 0;
+    background-color: #f3f4f6;
+    border-bottom: 2px solid black;
+    z-index: 2;
+}
+
+.th {
+    text-align: left;
+    padding: 1rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.875rem;
+}
+
+.tr {
+    transition: background-color 0.15s ease;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tr:nth-child(even) {
+    background-color: white;
+}
+
+.tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
+
+.tr:hover {
+    background-color: #f3f4f6;
+}
+
+.td {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.pageInfo {
+    max-width: 300px;
+}
+
+.pageTitle {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pageUrl {
+    font-family: monospace;
+    font-size: 0.875rem;
+    color: #4b5563;
+    word-break: break-all;
+}
+
+.browserBadge {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #374151;
+}
+
+.dateText {
+    font-family: monospace;
+    font-size: 0.875rem;
+}
+
+.action {
+    text-align: center;
+}
+
+.actionLink {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background-color 0.2s ease;
+}
+
+.actionLink:hover {
+    background-color: #1f2937;
+}
+
+.emptyState {
+    padding: 3rem;
+    text-align: center;
+}
+
+.emptyStateTitle {
+    color: #4b5563;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.emptyStateSubtitle {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}

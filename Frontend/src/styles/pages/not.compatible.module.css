@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card {
+    background-color: #000000;
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #333;
+}
+
+.title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.message {
+    font-size: 1rem;
+    color: #ccc;
+}

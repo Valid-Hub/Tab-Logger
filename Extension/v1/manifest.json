@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Browser History Logger",
+    "version": "1.0",
+    "description": "Logs all visited and deleted pages to a remote database",
+    "permissions": ["history", "tabs", "storage"],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "host_permissions": ["<all_urls>", "http://localhost/*", "https://your-server.com/*"]
+}
