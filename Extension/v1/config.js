@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost/tablogger/api.php';
+const API_BASE_URL = 'http://tablogger.nhely.hu/api.php';
 
 function getBrowserName() {
     const ua = navigator.userAgent.toLowerCase();
