@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../../styles/Components/UI/filter.bar.module.css';
 import { Search, Filter } from 'lucide-react';
+import { API_BASE_URL } from '../../config';
 
 interface FilterBarProps {
     table: string;
@@ -14,7 +15,7 @@ const FilterBar: React.FC<FilterBarProps> = ({ table, browserFilter, onBrowserCh
     const [browsers, setBrowsers] = useState<string[]>([]);
 
     useEffect(() => {
-        fetch(`http://localhost/tablogger/api.php?action=${table}`)
+        fetch(`${API_BASE_URL}?action=${table}`)
             .then((res) => res.json())
             .then((data) => setBrowsers(data))
             .catch((err) => console.error('Error fetching browsers:', err));

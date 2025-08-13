@@ -39,7 +39,7 @@ const PageTable: React.FC<PageTableProps> = ({ data, pageType }) => {
                             </tr>
                         </thead>
                         <tbody className={styles.tableBody}>
-                            {data.map((row, index) => (
+                            {data.map((row) => (
                                 <tr key={row.id} className={styles.tr}>
                                     <td className={styles.td}>
                                         <div className={styles.pageInfo}>

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import styles from '../../styles/Components/UI/status.bar.module.css';
 import type PageRecord from '../../types/PageRecord';
 

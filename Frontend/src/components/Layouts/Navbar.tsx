@@ -1,6 +1,5 @@
 import styles from '../../styles/Components/Layouts/navbar.module.css';
-import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
